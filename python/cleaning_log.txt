@@ -1,0 +1,21 @@
+Data Preparation Log
+======================================================================
+
+orders: converted 5 text columns to datetime
+orders: lifecycle date nulls retained (they mean the stage never happened)
+orders: added delivery_days, estimated_days, delivery_delay_days, is_late
+orders: is_late left null for undelivered orders rather than assumed False
+order_items: 112,650 rows, clean. Converted shipping_limit_date
+order_items: price and freight_value kept as separate measures
+payments: corrected 2 rows with 0 installments to 1
+payments: 3 rows have payment_type 'not_defined' - retained and flagged
+reviews: reduced 99,224 to 98,673 rows - one review per order (latest kept)
+reviews: comment title/message nulls retained, they simply mean no text was written
+customers: standardised city and state text casing
+customers: customer_unique_id will be used for all customer counting
+sellers: standardised city and state text casing
+products: fixed 2 misspelled column names in source
+products: 610 missing categories labelled 'unknown' (rows kept, revenue preserved)
+products: 623 products end with English category 'Unknown'
+geolocation: 1,000,163 rows -> 738,332 after dedupe -> 19,015 after aggregation
+geolocation: one row per zip prefix (mean coordinate, modal city/state) to remove many-to-many
