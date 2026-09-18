@@ -1,0 +1,41 @@
+--- KEY UNIQUENESS ---
+orders.order_id unique: True
+customers.customer_id unique: True
+products.product_id unique: True
+sellers.seller_id unique: True
+items dupes on (order_id, order_item_id): 0
+payments dupes on (order_id, payment_sequential): 0
+reviews.review_id unique: False
+reviews.order_id unique: False
+
+--- REAL CUSTOMERS ---
+customer_id count: 99441
+customer_unique_id count: 96096
+
+--- ORPHANS (should all be 0) ---
+items with no order: 0
+payments with no order: 0
+reviews with no order: 0
+items with no product: 0
+items with no seller: 0
+orders with no customer: 0
+
+--- COVERAGE ---
+orders with no payment: 1
+orders with no review: 768
+orders with no items: 775
+
+--- DATE RANGE ---
+First order: 2016-09-04 21:15:19 | Last order: 2018-10-17 17:30:18
+
+--- ORDER STATUS ---
+order_status
+delivered      96478
+shipped         1107
+canceled         625
+unavailable      609
+invoiced         314
+processing       301
+created            5
+approved           2
+Name: count, dtype: int64
