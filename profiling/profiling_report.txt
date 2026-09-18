@@ -1,0 +1,194 @@
+======================================================================
+olist_customers_dataset.csv
+Rows: 99441 | Columns: 5
+----------------------------------------------------------------------
+customer_id                 object
+customer_unique_id          object
+customer_zip_code_prefix     int64
+customer_city               object
+customer_state              object
+dtype: object
+----------------------------------------------------------------------
+Nulls per column:
+customer_id                 0
+customer_unique_id          0
+customer_zip_code_prefix    0
+customer_city               0
+customer_state              0
+dtype: int64
+Exact duplicate rows: 0
+
+======================================================================
+olist_geolocation_dataset.csv
+Rows: 1000163 | Columns: 5
+----------------------------------------------------------------------
+geolocation_zip_code_prefix      int64
+geolocation_lat                float64
+geolocation_lng                float64
+geolocation_city                object
+geolocation_state               object
+dtype: object
+----------------------------------------------------------------------
+Nulls per column:
+geolocation_zip_code_prefix    0
+geolocation_lat                0
+geolocation_lng                0
+geolocation_city               0
+geolocation_state              0
+dtype: int64
+Exact duplicate rows: 261831
+
+======================================================================
+olist_order_items_dataset.csv
+Rows: 112650 | Columns: 7
+----------------------------------------------------------------------
+order_id                object
+order_item_id            int64
+product_id              object
+seller_id               object
+shipping_limit_date     object
+price                  float64
+freight_value          float64
+dtype: object
+----------------------------------------------------------------------
+Nulls per column:
+order_id               0
+order_item_id          0
+product_id             0
+seller_id              0
+shipping_limit_date    0
+price                  0
+freight_value          0
+dtype: int64
+Exact duplicate rows: 0
+
+======================================================================
+olist_order_payments_dataset.csv
+Rows: 103886 | Columns: 5
+----------------------------------------------------------------------
+order_id                 object
+payment_sequential        int64
+payment_type             object
+payment_installments      int64
+payment_value           float64
+dtype: object
+----------------------------------------------------------------------
+Nulls per column:
+order_id                0
+payment_sequential      0
+payment_type            0
+payment_installments    0
+payment_value           0
+dtype: int64
+Exact duplicate rows: 0
+
+======================================================================
+olist_order_reviews_dataset.csv
+Rows: 99224 | Columns: 7
+----------------------------------------------------------------------
+review_id                  object
+order_id                   object
+review_score                int64
+review_comment_title       object
+review_comment_message     object
+review_creation_date       object
+review_answer_timestamp    object
+dtype: object
+----------------------------------------------------------------------
+Nulls per column:
+review_id                      0
+order_id                       0
+review_score                   0
+review_comment_title       87656
+review_comment_message     58247
+review_creation_date           0
+review_answer_timestamp        0
+dtype: int64
+Exact duplicate rows: 0
+
+======================================================================
+olist_orders_dataset.csv
+Rows: 99441 | Columns: 8
+----------------------------------------------------------------------
+order_id                         object
+customer_id                      object
+order_status                     object
+order_purchase_timestamp         object
+order_approved_at                object
+order_delivered_carrier_date     object
+order_delivered_customer_date    object
+order_estimated_delivery_date    object
+dtype: object
+----------------------------------------------------------------------
+Nulls per column:
+order_id                            0
+customer_id                         0
+order_status                        0
+order_purchase_timestamp            0
+order_approved_at                 160
+order_delivered_carrier_date     1783
+order_delivered_customer_date    2965
+order_estimated_delivery_date       0
+dtype: int64
+Exact duplicate rows: 0
+
+======================================================================
+olist_products_dataset.csv
+Rows: 32951 | Columns: 9
+----------------------------------------------------------------------
+product_id                     object
+product_category_name          object
+product_name_lenght           float64
+product_description_lenght    float64
+product_photos_qty            float64
+product_weight_g              float64
+product_length_cm             float64
+product_height_cm             float64
+product_width_cm              float64
+dtype: object
+----------------------------------------------------------------------
+Nulls per column:
+product_id                      0
+product_category_name         610
+product_name_lenght           610
+product_description_lenght    610
+product_photos_qty            610
+product_weight_g                2
+product_length_cm               2
+product_height_cm               2
+product_width_cm                2
+dtype: int64
+Exact duplicate rows: 0
+
+======================================================================
+olist_sellers_dataset.csv
+Rows: 3095 | Columns: 4
+----------------------------------------------------------------------
+seller_id                 object
+seller_zip_code_prefix     int64
+seller_city               object
+seller_state              object
+dtype: object
+----------------------------------------------------------------------
+Nulls per column:
+seller_id                 0
+seller_zip_code_prefix    0
+seller_city               0
+seller_state              0
+dtype: int64
+Exact duplicate rows: 0
+
+======================================================================
+product_category_name_translation.csv
+Rows: 71 | Columns: 2
+----------------------------------------------------------------------
+product_category_name            object
+product_category_name_english    object
+dtype: object
+----------------------------------------------------------------------
+Nulls per column:
+product_category_name            0
+product_category_name_english    0
+dtype: int64
+Exact duplicate rows: 0
+
